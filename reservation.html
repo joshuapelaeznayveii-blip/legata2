@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Reservation | Legata Familia Resort</title>
+
+    <link
+        rel="stylesheet"
+        href="output.css">
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body
+    class="bg-green-50 font-['Poppins']">
+
+
+    <!-- ================================================= -->
+    <!-- NAVIGATION -->
+    <!-- ================================================= -->
+
+    <header
+        class="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
+
+        <nav
+            class="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-10">
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html#home"
+                class="shrink-0">
+
+                <img
+                    src="./img/legatalogoimg1.png"
+                    alt="Legata Familia Resort Logo"
+                    class="w-28 sm:w-30 lg:w-32 h-auto transition duration-300 hover:scale-105">
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul
+                class="hidden md:flex items-center gap-8 lg:gap-12 text-sm font-extrabold">
+
+
+                <li>
+
+                    <a
+                        href="index.html#home"
+                        class="text-green-700 hover:text-green-500 transition">
+
+                        HOME
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#rooms"
+                        class="text-green-700 hover:text-green-500 transition">
+
+                        ROOMS & COTTAGE
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#events"
+                        class="text-green-700 hover:text-green-500 transition">
+
+                        EVENTS
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#map"
+                        class="text-green-700 hover:text-green-500 transition">
+
+                        MAP
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="index.html#contact"
+                        class="text-green-700 hover:text-green-500 transition">
+
+                        CONTACT US
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                id="menu-btn"
+                type="button"
+                class="md:hidden text-green-700">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+
+                </svg>
+
+            </button>
+
+        </nav>
+
+
+        <!-- Mobile Navigation -->
+
+        <div
+            id="mobile-menu"
+            class="md:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out bg-white border-t">
+
+            <ul
+                class="flex flex-col text-center font-bold">
+
+
+                <li>
+
+                    <a
+                        href="index.html#home"
+                        class="block py-4 hover:bg-green-50 text-emerald-800">
+
+                        HOME
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#rooms"
+                        class="block py-4 hover:bg-green-50 text-emerald-800">
+
+                        ROOMS & COTTAGE
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#events"
+                        class="block py-4 hover:bg-green-50 text-emerald-800">
+
+                        EVENTS
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html#map"
+                        class="block py-4 hover:bg-green-50 text-emerald-800">
+
+                        MAP
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="index.html#contact"
+                        class="block py-4 hover:bg-green-50 text-emerald-800">
+
+                        CONTACT US
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- RESERVATION HERO -->
+    <!-- ================================================= -->
+
+    <section
+        class="pt-20">
+
+        <div
+            class="relative h-[45vh] min-h-87.5 overflow-hidden">
+
+
+            <img
+                src="./img/bookingbanner.jpg"
+                alt="Legata Familia Resort"
+                class="absolute inset-0 w-full h-full object-cover">
+
+
+            <div
+                class="absolute inset-0 bg-black/50"></div>
+
+
+            <div
+                class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+
+
+                <p
+                    class="uppercase tracking-[0.35em] text-green-300 font-semibold text-sm">
+
+                    LEGATA FAMILIA RESORT
+
+                </p>
+
+
+                <h1
+                    class="mt-4 text-white text-4xl md:text-6xl font-['Playfair_Display'] font-semibold">
+
+                    Make Your Reservation
+
+                </h1>
+
+
+                <p
+                    class="mt-5 max-w-2xl text-gray-200">
+
+                    Complete the information below to reserve your
+                    accommodation and plan your stay with us.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- MAIN RESERVATION AREA -->
+    <!-- ================================================= -->
+
+    <main
+        class="py-16 px-6 lg:px-20">
+
+
+        <div
+            class="max-w-6xl mx-auto">
+
+
+            <!-- ================================================= -->
+            <!-- FORM PHASE -->
+            <!-- ================================================= -->
+
+            <div
+                id="form-phase">
+
+
+                <div
+                    class="text-center mb-12">
+
+
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-green-900 font-['Playfair_Display']">
+
+                        Reservation Details
+
+                    </h2>
+
+
+                    <p
+                        class="mt-3 text-gray-600">
+
+                        Please provide the information needed for your reservation.
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="grid lg:grid-cols-3 gap-8">
+
+
+                    <!-- ================================================= -->
+                    <!-- SELECTED ACCOMMODATION -->
+                    <!-- ================================================= -->
+
+                    <div
+                        class="lg:col-span-1 bg-white rounded-3xl shadow-lg p-7 h-fit">
+
+
+                        <p
+                            class="text-sm uppercase tracking-widest text-green-600 font-semibold">
+
+                            Your Selection
+
+                        </p>
+
+
+                        <h3
+                            id="selected-accommodation"
+                            class="mt-3 text-3xl font-bold text-green-900 font-['Playfair_Display']">
+
+                            Loading...
+
+                        </h3>
+
+
+                        <div
+                            class="mt-6 space-y-4">
+
+
+                            <div
+                                class="flex justify-between border-b pb-3 gap-4">
+
+
+                                <span
+                                    id="selected-capacity-label"
+                                    class="text-gray-600">
+
+                                    Capacity
+
+                                </span>
+
+
+                                <span
+                                    id="selected-capacity"
+                                    class="font-semibold text-gray-800 text-right">
+
+                                    --
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="flex justify-between border-b pb-3 gap-4">
+
+
+                                <span
+                                    class="text-gray-600">
+
+                                    Reservation Price
+
+                                </span>
+
+
+                                <span
+                                    id="selected-price"
+                                    class="font-bold text-green-700">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="pt-2">
+
+
+                                <span
+                                    id="selected-type"
+                                    class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+
+                                    --
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- GUEST INFORMATION -->
+                    <!-- ================================================= -->
+
+                    <div
+                        class="lg:col-span-2 bg-white rounded-3xl shadow-lg p-7 md:p-10">
+
+
+                        <h3
+                            class="text-2xl font-bold text-green-900 font-['Playfair_Display']">
+
+                            Guest Information
+
+                        </h3>
+
+
+                        <p
+                            class="mt-2 text-gray-600 text-sm">
+
+                            Please enter the details of the guest making the reservation.
+
+                        </p>
+
+
+                        <form
+                            id="reservation-form"
+                            class="mt-8">
+
+
+                            <!-- NAME -->
+
+                            <div
+                                class="grid md:grid-cols-3 gap-6">
+
+
+                                <div>
+
+                                    <label
+                                        for="first-name"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        First Name
+
+                                    </label>
+
+
+                                    <input
+                                        type="text"
+                                        id="first-name"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+
+                                <div>
+
+                                    <label
+                                        for="middle-name"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Middle Name
+
+                                        <span
+                                            class="text-gray-400 font-normal">
+
+                                            (Optional)
+
+                                        </span>
+
+                                    </label>
+
+
+                                    <input
+                                        type="text"
+                                        id="middle-name"
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+
+                                <div>
+
+                                    <label
+                                        for="last-name"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Last Name
+
+                                    </label>
+
+
+                                    <input
+                                        type="text"
+                                        id="last-name"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- CONTACT -->
+
+                            <div
+                                class="grid md:grid-cols-2 gap-6 mt-6">
+
+
+                                <div>
+
+                                    <label
+                                        for="email"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Email Address
+
+                                    </label>
+
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+
+                                <div>
+
+                                    <label
+                                        for="phone"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Contact Number
+
+                                    </label>
+
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- DATES -->
+
+                            <div
+                                class="grid md:grid-cols-2 gap-6 mt-6">
+
+
+                                <div>
+
+                                    <label
+                                        for="check-in"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Check-in Date
+
+                                    </label>
+
+
+                                    <input
+                                        type="date"
+                                        id="check-in"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+
+                                <div
+                                    id="checkout-container">
+
+
+                                    <label
+                                        for="check-out"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Check-out Date
+
+                                    </label>
+
+
+                                    <input
+                                        type="date"
+                                        id="check-out"
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- GUESTS -->
+
+                            <div
+                                class="grid md:grid-cols-2 gap-6 mt-6">
+
+
+                                <div>
+
+                                    <label
+                                        for="adults"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Adults
+
+                                    </label>
+
+
+                                    <input
+                                        type="number"
+                                        id="adults"
+                                        min="1"
+                                        value="1"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+
+                                <div>
+
+                                    <label
+                                        for="children"
+                                        class="block text-sm font-semibold text-gray-700 mb-2">
+
+                                        Children / Kids
+
+                                    </label>
+
+
+                                    <input
+                                        type="number"
+                                        id="children"
+                                        min="0"
+                                        value="0"
+                                        required
+                                        class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================================================= -->
+                            <!-- DYNAMIC PRICE NOTE -->
+                            <!-- ================================================= -->
+
+                            <div
+                                id="guest-fee-note"
+                                class="mt-4 rounded-xl bg-green-50 border-l-4 border-green-600 px-4 py-3 text-sm text-green-800">
+
+                            </div>
+
+
+                            <!-- CONTINUE BUTTON -->
+
+                            <div
+                                class="mt-10">
+
+
+                                <button
+                                    type="submit"
+                                    class="w-full rounded-full bg-green-700 px-8 py-4 text-white font-semibold hover:bg-green-800 hover:-translate-y-1 hover:shadow-xl transition duration-300">
+
+                                    Continue to Reservation Summary
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- REVIEW PHASE -->
+            <!-- ================================================= -->
+
+            <div
+                id="review-phase"
+                class="hidden">
+
+
+                <div
+                    class="text-center mb-12">
+
+
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-green-900 font-['Playfair_Display']">
+
+                        Review Your Reservation
+
+                    </h2>
+
+
+                    <p
+                        class="mt-3 text-gray-600">
+
+                        Please double-check your information before continuing.
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white rounded-3xl shadow-lg p-7 md:p-10">
+
+
+                    <!-- ================================================= -->
+                    <!-- GUEST INFORMATION -->
+                    <!-- ================================================= -->
+
+                    <h3
+                        class="text-xl font-bold text-green-900">
+
+                        Guest Information
+
+                    </h3>
+
+
+                    <div
+                        class="grid md:grid-cols-3 gap-6 mt-6 border-b pb-8">
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Full Name
+
+                            </p>
+
+
+                            <p
+                                id="review-name"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Email Address
+
+                            </p>
+
+
+                            <p
+                                id="review-email"
+                                class="font-semibold text-gray-800 mt-1 break-all">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Contact Number
+
+                            </p>
+
+
+                            <p
+                                id="review-phone"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- RESERVATION DETAILS -->
+                    <!-- ================================================= -->
+
+                    <h3
+                        class="text-xl font-bold text-green-900 mt-10">
+
+                        Reservation Details
+
+                    </h3>
+
+
+                    <div
+                        class="grid md:grid-cols-2 gap-6 mt-6">
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Accommodation
+
+                            </p>
+
+
+                            <p
+                                id="review-accommodation"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Type
+
+                            </p>
+
+
+                            <p
+                                id="review-type"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Check-in
+
+                            </p>
+
+
+                            <p
+                                id="review-checkin"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            id="review-checkout-container">
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Check-out
+
+                            </p>
+
+
+                            <p
+                                id="review-checkout"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Adults
+
+                            </p>
+
+
+                            <p
+                                id="review-adults"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <p
+                                class="text-sm text-gray-500">
+
+                                Children / Kids
+
+                            </p>
+
+
+                            <p
+                                id="review-children"
+                                class="font-semibold text-gray-800 mt-1">
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- PRICE SUMMARY -->
+                    <!-- ================================================= -->
+
+                    <div
+                        class="mt-10 rounded-2xl bg-green-50 p-6">
+
+
+                        <h4
+                            class="text-lg font-bold text-green-900">
+
+                            Price Summary
+
+                        </h4>
+
+
+                        <div
+                            class="mt-5 space-y-4">
+
+
+                            <div
+                                class="flex justify-between gap-4">
+
+
+                                <span
+                                    class="text-gray-600">
+
+                                    Accommodation
+
+                                </span>
+
+
+                                <span
+                                    id="review-base-price"
+                                    class="font-semibold text-gray-800">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                id="adult-fee-row"
+                                class="flex justify-between gap-4">
+
+
+                                <span
+                                    class="text-gray-600">
+
+                                    Adult Entrance Fee
+
+                                </span>
+
+
+                                <span
+                                    id="review-adult-fee"
+                                    class="font-semibold text-gray-800">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                id="child-fee-row"
+                                class="flex justify-between gap-4">
+
+
+                                <span
+                                    class="text-gray-600">
+
+                                    Kids / Child Entrance Fee
+
+                                </span>
+
+
+                                <span
+                                    id="review-child-fee"
+                                    class="font-semibold text-gray-800">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                id="additional-guest-row"
+                                class="flex justify-between gap-4">
+
+
+                                <span
+                                    id="additional-fee-label"
+                                    class="text-gray-600">
+
+                                    Additional Guest Fee
+
+                                </span>
+
+
+                                <span
+                                    id="review-additional-fee"
+                                    class="font-semibold text-gray-800">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="border-t border-green-200 pt-4 flex justify-between gap-4">
+
+
+                                <span
+                                    class="font-bold text-green-900">
+
+                                    Total Amount
+
+                                </span>
+
+
+                                <span
+                                    id="review-total"
+                                    class="text-2xl font-bold text-green-700">
+
+                                    ₱0
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- BUTTONS -->
+                    <!-- ================================================= -->
+
+                    <div
+                        class="grid md:grid-cols-2 gap-4 mt-10">
+
+
+                        <button
+                            id="back-to-form"
+                            type="button"
+                            class="rounded-full border-2 border-green-700 px-8 py-4 text-green-700 font-semibold hover:bg-green-50 transition">
+
+                            ← Go Back & Edit
+
+                        </button>
+
+
+                        <button
+                            id="confirm-information"
+                            type="button"
+                            class="rounded-full bg-green-700 px-8 py-4 text-white font-semibold hover:bg-green-800 hover:-translate-y-1 hover:shadow-xl transition duration-300">
+
+                            Confirm Information
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================= -->
+
+    <script
+        src="reservation.js"></script>
+
+
+</body>
+
+</html>

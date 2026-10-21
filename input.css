@@ -1,0 +1,313 @@
+@import "tailwindcss";
+
+
+
+
+
+
+
+/*=============================
+    WHY CHOOSE LEGATA
+==============================*/
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    flex-wrap:wrap;
+}
+
+.glass-card{
+
+    position:relative;
+
+    width:220px;
+
+    height:400px;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+   
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+    transition:all .55s ease;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+}
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-130%;
+
+    width:70%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transition:.8s;
+
+    pointer-events:none;
+}
+
+.glass-card:hover::before{
+
+    left:160%;
+
+}
+
+.peaceful-card{
+    background:   rgba(16, 185, 129, .12);
+}
+
+.swimming-card{
+    background: rgba(59, 130, 246, .12);
+}
+
+.family-card{
+    background: rgba(245, 158, 11, .12);
+}
+
+.event-card{
+    background: rgba(168, 85, 247, .12);
+}
+
+.glass-card:hover{
+
+    width:340px;
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.30);
+
+    border:1px solid rgba(255,255,255,.55);
+
+}
+
+/*----------------------*/
+
+.card-title{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:white;
+
+    text-align:center;
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    width:180px;
+
+    transition:.55s ease;
+
+}
+
+/*----------------------*/
+
+.card-icon{
+
+    position:absolute;
+
+    top:35px;
+
+    left:50%;
+
+    transform:translate(-50%,-20px);
+
+    opacity:0;
+
+    transition:
+        transform .5s ease,
+        opacity .35s ease;
+
+}
+
+.leaf-svg{
+
+    width:75px;
+
+    height:75px;
+
+    color:white;
+
+}
+
+/*----------------------*/
+
+.card-divider{
+
+    position:absolute;
+
+    top:130px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:2px;
+
+    background:rgba(255,255,255,.9);
+
+    border-radius:999px;
+
+    transition:width .35s ease .12s;
+
+}
+
+/*----------------------*/
+
+.card-description{
+
+    position:absolute;
+
+    left:30px;
+
+    right:30px;
+
+    bottom:-140px;
+
+    opacity:0;
+
+    color:white;
+
+    line-height:1.8;
+
+    transition:
+        bottom 1.20s ease,
+        opacity .35s ease .18s;
+
+}
+
+/*======================
+      HOVER
+=======================*/
+
+.glass-card:hover .card-icon{
+
+    opacity:1;
+    transform: translate(-50%,0);
+}
+
+.glass-card:hover .card-title{
+
+    top:140px;
+
+    transform:translateX(-50%);
+
+}
+
+.glass-card:hover .card-divider{
+
+    width:280px;
+
+}
+
+.glass-card:hover .card-description{
+
+    bottom:35px;
+
+    opacity:1;
+
+}
+
+
+.glass-card.active{
+    height:370px;
+}
+
+
+
+.glass-card.active .card-icon{
+    opacity:1;
+    transform:translate(-50%,0);
+}
+
+.glass-card.active .card-title{
+    top:140px;
+    transform:translateX(-50%);
+}
+
+.glass-card.active .card-divider{
+    width:280px;
+}
+
+.glass-card.active .card-description{
+    bottom:25px;
+    opacity:1;
+}
+
+
+
+
+@media (max-width:1023px){
+
+    .cards-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+
+
+
+@media (max-width:1023px){
+
+    .glass-card{
+
+        width:min(90%,420px);
+
+        height:150px;
+
+        cursor:pointer;
+
+    }
+
+}
+
+/* =========================================
+   FESTIVAL DIVIDER
+========================================= */
+
+.festival-divider{
+
+    width:100%;
+    height:20px;
+
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='20' viewBox='0 0 120 20'%3E%3Cpolygon points='0,0 12,20 24,0' fill='%23166534'/%3E%3Cpolygon points='24,0 36,20 48,0' fill='%2315803d'/%3E%3Cpolygon points='48,0 60,20 72,0' fill='%2322c55e'/%3E%3Cpolygon points='72,0 84,20 96,0' fill='%2386efac'/%3E%3Cpolygon points='96,0 108,20 120,0' fill='%23fde047'/%3E%3C/svg%3E");
+
+    background-repeat:repeat-x;
+
+    background-size:120px 20px;
+
+}
